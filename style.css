@@ -1,0 +1,383 @@
+body{
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+}
+#header-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: silver;
+    height: 50px;
+    align-items: center;
+}
+#header-container > div > div > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 0.3rem;
+}
+#header-container > div > div >  a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+#signInUp{
+    display: flex;
+    gap: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+/*
+SIDE BAR MENY
+*/
+
+
+#side-bar-menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#sideBarAccount{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: -1000px;
+    right: 0px;
+    width: 90%;
+    height: 100%;
+    background-color: rgb(228, 228, 228);
+}
+#side-top{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+#side-bottom , #side-bar-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+#side-bottom > div , #side-bar-bottom > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#side-bottom > div > img , #side-bar-bottom > div >img{
+    width: 30px;
+}
+#side-bar-bottom{
+    background-color: white;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+#name{
+    position: absolute;
+    top: 75px;
+    left: 90px;
+
+}
+/*
+SIDE BAR MENu
+*/
+
+#between-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+#between-container > div {
+    display: flex;
+    gap: 10px;
+}
+#between-container >  div > li{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    width: 100px;
+    border: 0.5px solid silver;
+    text-align: center;
+    padding: 3px;
+    list-style-type: none;
+    cursor: pointer;
+}
+#between-container > div >  li:hover{
+    background-color: silver;
+}
+
+#selector{
+    width: 150px;
+    text-align: center;
+    border: 0.5px solid silver;
+    padding: 3px;
+}
+
+
+/* 
+
+MAIN MAIN MAIN MAIN
+
+*/
+
+#container > div > img{
+    width:200px;
+    height:200px;
+    border: 0.2px solid silver;
+}
+
+@media (min-width:900px){
+    #container > div > img{
+        width:250px;
+        height:300px;
+    }  
+    #test{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+    }
+}
+#container > div{
+    position: relative;
+    transform-style: preserve-3d;
+    backface-visibility: visible;
+    transition: all 1.5s ease;
+}
+#container > div:hover{
+    transform: rotateY(180deg);
+}
+#test{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    opacity: 0.8;
+    color: silver;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#test > button{
+    text-decoration: none;
+    color: silver;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#test > button:hover{
+background-color: black;
+}
+strong {
+    display: none;
+}
+#container{
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+#sorter{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+#Default , #LowToHigh , #HighToLow{
+    width: 150px;
+    background-color: white;
+    border: 0.5px solid silver;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#LowToHigh , #HighToLow{
+    display: none;
+}
+
+
+/* 
+FOOTER
+
+*/
+
+#footer-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: silver;
+    justify-content: space-between;
+}
+
+#footer-h3{
+    margin-left: 40px;
+    color: white;
+}
+#footer-container > div > a > img{
+    width: 30px;
+    height: 30px;
+}
+#footer-container > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 40px;
+}
+/*
+
+SIGN IP PAGE
+
+*/
+#sign-in-container{
+    position: absolute;
+    background-color: rgb(167, 161, 161);
+    left: -100%;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+#sign-ip-top{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 400px;
+    margin-top: 50px;
+}
+#sign-ip-top > div > p{
+    font-size: 5px;
+}
+#sign-ip-top > div > img{
+    width: 20px;
+}
+#sign-in-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    align-items: center;
+}
+#sign-in-middle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#sign-button{
+    margin-top: 30px;
+    width: 250px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+#sign-button:hover{
+    background-color: rgb(27, 26, 26);
+    color: rgb(223, 215, 215);
+    cursor: pointer;
+}
+#sign-in-container-closer{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 30px;
+    height: 30px;
+    font-size:20px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+#sign-in-container-closer:hover{
+    background-color: rgb(54, 53, 53);
+    color: rgb(255, 0, 0);
+}
+/*
+
+SIGN IP PAGE
+
+*/
+
+
+/*
+
+SIGN UP PAGE
+
+*/
+
+#sign-up-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    align-items: center;
+}
+#sign-up-top{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+}
+
+#sign-up-top > div >img{
+    width: 30px;
+}
+#sign-up-middle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+#gender{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#input-fills{
+    width: 440px;
+    height: 40px;
+}
+#sign-up-middle > div > p{
+    font-size: 13px;
+}
+
+#sign-info{
+    width: 450px;
+    background-color: white;
+    border: 2px solid rgb(228, 220, 220);
+}
+#register-button{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+#register-button:hover{
+    background-color: rgb(22, 22, 22);
+}
+#sign-up-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*
+
+SIGN UP PAGE
+
+*/
